@@ -1,0 +1,4 @@
+function kanidm_version {
+	ver_string=$(git describe --tags --match "v*")
+	echo -n "${ver_string:1}" | tr '-' '_'
+}
